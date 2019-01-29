@@ -1,85 +1,8 @@
 #include <iostream>
 #include <string>
+#include "Adder.cpp"
 
 using namespace std;
-
-class Adder {
-  public:
-    float x, y;
-
-    /**
-     * Instantiates the Adder with 2 as both values
-     */
-    Adder() {
-      x = 2;
-      y = 2;
-    }
-
-    /**
-     * Instantiates the Adder with x and y respectively
-     * @param x1 first number
-     * @param y1 second number
-     */
-    Adder(int x1, int y1) {
-      x = x1;
-      y = y1;
-    }
-
-    /**
-     * Adds the numbers
-     */
-    float add() {
-      return x + y;
-    }
-
-    /**
-     * Subtracts the numbers
-     */
-    float subtract() {
-      return x - y;
-    }
-
-    /**
-     * Multiplies the numbers
-     */
-    float multiply() {
-      return x * y;
-    }
-
-    /**
-     * Divides the numbers
-     */
-    float divide() {
-      return x / y;
-    }
-
-    /**
-     * Gets the chosen number
-     */
-    float get(string which) {
-      if (which.compare("x") == 0) {
-        return x;
-      } else if (which.compare("y") == 0) {
-        return y;
-      } else {
-        cout << "invalid option" << endl;
-        return -1;
-      }
-    }
-
-    /**
-     * Sets the chosen number
-     */
-    void set(string which, float val) {
-      if (which.compare("x") == 0) {
-        x = val;
-      } else if (which.compare("y") == 0) {
-        y = val;
-      } else {
-        cout << "invalid option" << endl;
-      }
-    }
-};
 
 int main() {
   Adder firstAdder;
