@@ -17,5 +17,4 @@ public:
 	void Remove(int);
 	void ToString();
 	Node* Search(int); // tells us if an int is in the tree or not
-
 };
